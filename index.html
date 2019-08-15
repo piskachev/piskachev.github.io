@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>SecuCheck</title>
+    <title>Goran Piskachev</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -34,9 +34,12 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li><a class="active" href="#">Home</a></li>
 					<li><a href="index.html#about-section">About</a></li>
-					<li><a href="index.html#results-section">Results</a></li>
-					<li><a href="index.html#team-section">Team</a></li>
-					<li><a href="index.html#partners-section">Partners</a></li>
+					<li><a href="index.html#edu-section">Edu</a></li>
+					<li><a href="index.html#work-section">Work Experience</a></li>
+					<li><a href="index.html#publications-section">Publications</a></li>
+					<li><a href="index.html#projects-section">Projects</a></li>
+					<li><a href="index.html#service-section">Serivce</a></li>
+					<li><a href="index.html#teaching-section">Teaching</a></li>
 					<li><a href="index.html#contact-section">Contact</a></li>
 				</ul>
 			</div>
@@ -48,13 +51,16 @@
 		<div class="about" >
 			<div class="container about" id="about-section">
 				<div class="about-description">
-					<h1>Why SecuCheck?</h1>
-					<p>Static code analysis is a technology to detect various security vulnerabilities at implementation time. However, as studies show, developers reject <strong>static analysis tools</strong>, as they find them hard to configure such that they can operate efficiently in their application context. With their default parameters, most tools produce a high number of false warnings, while missing vulnerabilities that may be important. This demotivates the developers. The goal of this project is to reduce the gap between static analysis and software development, thereby improving the user experience of static analysis tools.</p>
+					<h1>Goran Piskachev</h1>
+					<p>I am a research associate at Fraunhofer IEM in Paderborn, Germany.</p>
+					
+					<h3>Research</h3>
+					<p> Static code analysis can detect many known vulnerabilities when correctly configured for each application being analyzed. However, the acceptance of static analysis tools from developers is still very low. One of the main issues is that the devlopers are not familiar with the domain and do not know how to set the parameters to get the expected results. Default configurations often result in high number of false positives. If we want to reach SecDevOps process, we need to make sure that the developers are aware of the security issues already in the design phase. In my research, I develop methods and tools that will close the gap between the development and static code analysis. One of the main problem is how to detect security-relevant entities in the code which are needed for the configuration of static analyses. The goal is to provide the developer an IDE-integrated generator of configurations for static analyses that can be used at design time.</p>
 		
-					<a href="about.html" class="btn btn-action"><strong>Learn More</strong></a>
+					<!---<a href="about.html" class="btn btn-action"><strong>Learn More</strong></a>-->
 				</div>
 			
-				<div class="about-image">
+				<!---<div class="about-image">
 					<a  href="#header-image">
 						<img src="img/process.jpg" class="image responsive thumbnail">
 					</a>
@@ -63,117 +69,138 @@
 							<img src="img/process.jpg" >
 						</a>
 					</div>
-				</div>
+				</div>-->
+				
 			</div>
 		</div>
 		<!--- About end -->
 	
-		<!--- Results start -->
-		<div class="container result" id="results-section">
-			<h1>Results</h1>
-			<div class="row">
-				<div class="column">
+		<!--- Edu start -->
+		<div class="about" >
+		<div class="container about" id="edu-section">
+			<h1>Education</h1>		
 					<ul>
-						<li>Interviews with Software Developers
-            <ul>
-            <li>We interviewed 9 software developers from 5 companies to find out what developers think about existing tools for security checks, what are the existing problems, and what is their security awareness level. </li>
-            <li><a href="https://github.com/secucheck/secucheck.github.io/blob/master/docs/SecuCheck_Interviews_Results.pdf">Summary</a></li> 
-            </ul>
-            </li>
-						<li>Static Analysis Results Interchange Format (SARIF)
-            <ul>
-            <li>We integrated <a href="https://www.oasis-open.org/committees/sarif"> SARIF</a> into <a href="https://www.eclipse.org/cognicrypt/"> CogniCrypt</a> tool. We summarized the standard and documented our convertor to ease the integration of the standard in other static analysis tools. </li>
-            <li> Technical report: <a href="https://arxiv.org/abs/1907.02558">Integration of the Static Analysis Results Interchange Format in CogniCrypt</a></li>
-            </ul>
-            </li>
-            <li> SWAN: Security Methods for Weakness Detection
-            <ul>
-            <li>To detect specific security vulnerabilities, taint analyses must be configured with specific methods. For example, executeQuery() can be a sink for CWE-89 (SQL injection), but not for CWE-601 (open redirect). SWAN uses supervised machine-learning to automatically detect such methods from Java codebase and classifies them into different CWEs. SWAN_assist is an IntelliJ plugin that allows the developer to manually train the classifier through active learning and improve the precision of the approach.</li>
-            <li>Publication: <a href="https://piskachev.com/wp-content/uploads/2019/06/swan-paper.pdf">Codebase-Adaptive Detection of Security-Relevant Methods</a>, Goran Piskachev, Lisa Nguyen Quang Do, Eric Bodden, <a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/17/Codebase-Adaptive-Detection-of-Security-Relevant-Methods">, International Symposium on Software Testing and Analysis 2019</a></li>
-						<li>Source code: SWAN and SWAN_assist <a href="https://github.com/secure-software-engineering/swan">[github link]</a></li>
-						<li>Demonstration:  SwanAssist: Semi-Automated Detection of Code-Specific, Security-Relevant Methods, Goran Piskachev, Lisa Nguyen Quang Do, Oshando Johnson, and Eric Bodden, <a href="https://2019.ase-conferences.org/track/ase-2019-Demonstrations">Automated Software Engineering 2019</a> <a href="https://www.youtube.com/watch?v=fSyD3V6EQOY"> [video]</a> <a href="https://www.youtube.com/watch?v=nAExeTP1r_c">[long version video]</a></li>
-						<li>Technical report: <a href="https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1%5Bpublikation%5D=9859">Codebase-Adaptive Detection of Security-Relevant Methods</a> </li>
-            </ul>
-            </li>
-						
-					</ul>
-				</div>
-				<div class="column">
-					<a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/secucheck_swc?ref_src=twsrc%5Etfw">Project Updates by secucheck_swc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
-			</div>	
+ 						<li>[Jan 2016 - Today] <strong>PhD candidate,</strong> <a href="http://www.uni-paderborn.de/" target="_blank" rel="noopener">Paderborn University
+</a>					</li>
+ 						<li>[Oct 2012 - Jul 2015] <strong>MSc in Computer Science</strong>, <a href="http://www.uni-paderborn.de/" target="_blank" rel="noopener">Paderborn University
+</a>					</li>
+ 						<li>[Sep 2008 - Jun 2012]<strong> Degree in Electrical Engineering and Information Technologies</strong>, <a href="https://www.finki.ukim.mk" target="_blank" rel="noopener">Ss. Cyril and Methodius University Skopje
+</a>					</li>
+ 						<li>[Sep 2006 - Aug 2008]<strong> Inernational Baccalaureate Diplomma Program</strong>, <a href="http://ibo.org/" target="_blank" rel="noopener">Josip Broz Tito High School Skopje</a></li>
+</ul>
+
 		</div>
-		<!--- Results end -->
+		</div>
+		<!--- Edu end -->
 		
-		<!--- Team start -->
-		<div class="team" id="team-section">
-			<div class="container"> 
-			<h1 class="h-white">Team</h1>
-				<div class="team-content container">
-					<div class="team-card">
-						<img src="img/goran.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Goran Piskachev</h4>
-						<p>Project Lead</p>
-					</div>
-					<div class="team-card">
-						<img src="img/eric.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Prof. Dr. Eric Bodden</h4>
-						<p>Research Advisor</p>
-					</div>
-					<div class="team-card">
-						<img src="img/ingo.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Ingo Budde</h4>
-						<p>Developer</p>
-					</div>
-					<div class="team-card">
-						<img src="img/oshando.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Oshando Johnson</h4>
-						<p>Developer</p>
-					</div>
-					<div class="team-card">
-						<img src="img/ashish.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Ashish Shukla</h4>
-						<p>Developer</p>
-					</div>
-					<div class="team-card">
-						<img src="img/johannes.jpg" class="responsive team-image"/>
-						<h4 class="h-white">Dr. Johannes Späth</h4>
-						<p>Research Advisor</p>
-					</div>
-				</div>
+		<!--- Work start -->
+		<div class="about" >
+		<div class="container about" id="work-section">
+			<h1>Work Experience</h1>
+				<ul>
+ 	<li>[Sep 2015 - Today] <strong>Research associate</strong> - Software engineering group, <a href="https://www.iem.fraunhofer.de/">Fraunhofer IEM</a>, Paderborn</li>
+ 	<li>[Jan 2015 - Jul 2015] <strong>Student research assistant</strong> - Software engineering group, <a href="https://www.ipt.fraunhofer.de/">Fraunhofer IPT</a>, Paderborn</li>
+ 	<li>[Feb 2013 - Dec 2014] <strong>Student research assistant</strong> - <a href="https://www.hni.uni-paderborn.de/swt/" target="_blank" rel="noopener">Software engineering group, Heinz Nixdorf Institut</a>, Paderborn</li>
+ 	<li>[Jul 2012 - Aug 2012] <strong>Internship</strong> - <a href="http://www.theosysbio.bio.ic.ac.uk/" target="_blank" rel="noopener">Theoretical systems biology group</a>, Imperial College London</li>
+ 	<li>[Feb 2012 - Jun 2012] <strong>Lab Demonstrator</strong> - <a href="https://www.finki.ukim.mk/en" target="_blank" rel="noopener">Faculty of Computer Science and Engineering</a>, <a href="http://www.ukim.edu.mk/">UKIM Skopje</a></li>
+ 	<li>[Aug 2011 - Oct 2011] <strong>Internship</strong> - <a href="http://www.koios-consulting.co.uk/" target="_blank" rel="noopener">Koios Savetovanje</a>, Zagreb</li>
+ 	<li>[Jul 2011 - Aug 2011] <strong>Internship</strong> - <a href="http://www.alvila.com/" target="_blank" rel="noopener">Alvila</a>, Prague</li>
+</ul>
+		</div>
+		</div>
+		<!--- Work end -->
+		
+		<!--- Publications start -->
+		<div class="about" >
+		<div class="container about" id="publications-section">
+		
+			<h1>Publications</h1>
+			
+			<ul>
+	<li><a href="http://lisanqd.com/wp-content/uploads/2019/08/ase19tool.pdf"> SwanAssist: Semi-Automated Detection of Code-Specific, Security-Relevant Methods</a>, Goran Piskachev, Lisa Nguyen Quang Do, Oshando Johnson, and Eric Bodden, Demonstration Track at Automated Software Engineering 2019</li>
+ 	<li><a href="https://arxiv.org/abs/1907.02558">Integration of the Static Analysis Results Interchange Format in CogniCrypt</a> (Technical Report), Sriteja Kummita, Goran Piskachev, Heinz Nixdorf Institute, Paderborn, 2019</li>
+ 	<li><a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/17/Codebase-Adaptive-Detection-of-Security-Relevant-Methods">Codebase-Adaptive Detection of Security-Relevant Methods</a>, Piskachev Goran, Nguyen Lisa, Bodden Eric, ISSTA 2019, Beijing, China, July 2019</li>
+ 	<li><a class="publinklist" href="https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1%5Bpublikation%5D=9859">Codebase-Adaptive Detection of Security-Relevant Methods (Technical Report),</a> Piskachev Goran, Nguyen Lisa, Bodden Eric, Heinz Nixdorf Institute, Paderborn, 2019</li>
+ 	<li><a href="https://conf.researchr.org/event/ecoop-issta-2018/ecoop-issta-2018-doctoral-symposium-transparent-static-analysis-for-the-detection-of-security-vulnerabilities">Transparent Static Analysis for the Detection of Security Vulnerabilities</a>, Piskachev Goran, ISSTA/ECOOP 2018 Doctoral Symposium, Amsterdam 2018</li>
+ 	<li><a href="https://www.hni.uni-paderborn.de/en/publications/publikationen/?tx_hnippview_pi1%5Bpublikation%5D=9478">The MechatronicUML Design Method: Process and Language for Platform-Independent Modeling</a> (Technical report), Dziwok Stefan, Pohlmann Uwe, Piskachev Goran, Schubert David, Thiele Sebastian, Gerking Christopher, Paderborn 2016</li>
+ 	<li><a href="https://piskachev.com/wp-content/uploads/2018/02/LAFORE_DSL_for_Reconfiguration_Goran_Piskachev_6750458_MA.pdf">LAFORE: Domain Specific Language for Reconfiguration</a> (Master thesis), Piskachev Goran, Paderborn 2015</li>
+ 	<li><a href="https://www.hni.uni-paderborn.de/fileadmin/Fachgruppen/Softwaretechnik/Lehre/PG_Cybertron/PG_Cybertron_Final_Document.pdf">Cybertron, Project Group</a>, (Final Document) Paderborn 2015</li>
+ 	<li><a href="https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1%5bpublikation%5d=9118">Concerns, Views, Viewpoints, and Stakeholders in the Holistic Mechatronic UML Process</a> (Seminar thesis), Piskachev Goran, Paderborn 2015</li>
+ 	<li><a href="http://www.performance-symposium.org/fileadmin/user_upload/palladio-conference/2014/slides/11_StaticSpotter.pdf">Static Spotter for Scalability Anti-Patterns Detection</a> (Tutorial), Yu Jinying, Piskachev Goran, Symposium on Software Performance, Stuttgart 2014</li>
+ 	<li><a href="http://ieeexplore.ieee.org/document/6143832/">Performance modeling for a Web GRID architecture</a>, Bajrami Agim, Zdraveski Vladimir, Filiposka Sonja, Piskachev Goran, Trajanov Dimitar, Telecommunications Forum (TELEFOR), Belgrade, 2011</li>
+ 	<li><a href="https://piskachev.com/wp-content/uploads/2018/02/Novel-consensus-approach-for-protein-active-sites-detection.pdf">Novel consensus approach for protein active sites detection</a>, Piskachev Goran, Mirceva Georgina, Davcev Danco, International Scientific Conference, Computer Science, Ohrid 2011</li>
+			</ul>
+				
+		</div>
+		</div>
+		<!--- Publications end -->	
+		
+		<!--- Projects start -->
+		<div class="about" >
+		<div class="container about"  id="projects-section">
+			<div class="container">
+				<h1>Selected Projects</h1>
+				<ul>
+				<li><a href="https://secucheck.github.io/">SecuCheck</a></li>
+				<li><a href="https://appsecure.nrw/">AppSecure.NRW</a></li>
+				<li><a href="https://www.iem.fraunhofer.de/en/research/research-projects/identification-security-vulnerabilities-software-engineering-phase.html">ATTRACT: Secure Software Engineering</a></li>
+				</ul>
 			</div>
 		</div>
-		<!--- Team end -->
+		</div>
+		<!--- Projects end -->
 		
-		<!--- Partners start -->
-		
-		<div class="container partners" id="partners-section">
-		
-			<h1>Partners</h1>
-			
-			<div class="partner-logos">
-				<a href="https://www.softwarecampus.de/"><img src="img/scampus.jpg" class="partners-image"/></a>
-				<a href="https://www.iem.fraunhofer.de/"><img src="img/iem.jpg" class="partners-image"/></a>
-				<a href="https://www.softwareag.com"><img src="img/sag.jpg" class="partners-image"/></a>
+		<!--- Service start -->
+		<div class="about" >
+		<div class="container about"  id="service-section">
+			<div class="container">
+				<h1>Service</h1>
+				<ul>
+ 					<li><em><a href="https://2019.ecoop.org/home">European Conference on Object-Oriented Programming</a> (ECOOP)</em> 2019 - Doctoral Symposium Co-Chair</li>
+ 					<li><span class="st"><a href="https://conf.researchr.org/home/ecoop-issta-2018">ACM SIGSOFT <em>International Symposium on Software Testing and Analysis</em></a> (<wbr /><em>ISSTA</em>)</span> 2018 - <a href="https://conf.researchr.org/committee/issta-2018/issta-2018-artifacts-artifact-evaluation-committee">Artifact Evaluation Comitee</a></li>
+ 					<li><span class="st"><a href="https://conf.researchr.org/home/issta-2017">ACM SIGSOFT <em>International Symposium on Software Testing and Analysis</em></a> (<wbr /><em>ISSTA</em>)</span> 2017 - <a href="https://conf.researchr.org/committee/issta-2017/issta-2017-artifacts-evaluation-committee">Artifact Evaluation Comitee</a></li>
+				</ul>
 			</div>
-			
-			<h3>Funded by</h3>
-			<div class="funder-logo">
-				<a href="https://www.bmbf.de/"><img src="img/bmbf.png" class="partners-image"/></a>
-			</div>
-			</div>
+		</div>
+		</div>
+		<!--- Service end -->
 		
-		<!--- Partners end -->	
+		<!--- Teaching start -->
+		<div class="about" >
+		<div class="container about"  id="teaching-section">
+			<div class="container">
+				<h1>Teaching</h1>
+				At Paderborn University, I offer Bachelor, Master or Seminar theses. Here is a list of finished, on going or open topics.
+<ul>
+ 	<li>[finished] <a href="https://www.hni.uni-paderborn.de/swt/lehre/proseminar-softwareentwicklung-fuer-software-intensive-systeme-ss2019/">Pro-Seminar Softwareentwicklung fuer software-intensive Systeme</a> (SS19) - Representing Source Code in Machine Leraning for Code Analysis, student: Jens Ussatis</li>
+ 	<li>[finished] <a href="https://cs.uni-paderborn.de/dbis/lehre/veranstaltungen/ss-2019/seminar-advanced-software-engineering-concepts/general/">Seminar Advanced Software Engineering Contepts</a> (SS19) - Integrating Feedback in the IDE, student: Santosh Rangaraju</li>
+ 	<li>[ongoing] Master thesis - Detection of methods of interest for security based on software documentation, student: Oshando Johnson</li>
+ 	<li>[finished] <a href="https://www.hni.uni-paderborn.de/swt/lehre/seminar-secure-systems-engineering-ws-20182019/">Seminar Secure Systems Engineering</a> (WS18/19) - Survey on adaptive static analysis, student: Pavan Gurkhi Bhimesh</li>
+ 	<li>[finished] Bachelor thesis - Authentication and authorization checker for Java web systems, student: Tobias Petrasch</li>
+ 	<li>[finished] Bachelor thesis - Evaluation of machine learning algorithms for automatic detection of security-relevant methods, student: Parviz Nasiry</li>
+ 	<li>[finished] <a href="https://www.hni.uni-paderborn.de/swt/lehre/seminar-secure-systems-engineering-ws-20172018/">Seminar Secure Systems Engineering</a> (WS17/18) - Inferring specifications for taint-style vulnerabilities, student: Sebastian Mansfield</li>
+ 	<li>[finished] <a href="https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201617/seminar-secure-systems-engineering-ws-201617/">Seminar Secure Systems Engineering</a> (WS16/17) - Security vulnerabilities in Android's inter-app communication, student: Michael Kuenneke</li>
+</ul>
+If you are a student interested in similar topics, feel free to contact me and set up a meeting. Speculative requests are welcome.
+<h5>Teaching assistance</h5>
+<ul>
+ 	<li><a href="https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ss2017/modellbasierte-softwareentwicklung-ss2017/">Model-based software development</a> (SS17)</li>
+ 	<li><a href="https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201617/model-driven-software-development-ws20162017/">Model-driven software development</a> (WS16/17)</li>
+ 	<li><a href="https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201516/model-driven-software-development-ws20152016/">Model-driven software development</a> (WS15/16)</li>
+</ul>
+			</div>
+		</div>
+		</div>
+		<!--- Teaching end -->
 		
 		<!--- Contact start -->
-		<div class="contact"  id="contact-section">
-			<div class="container">
-				<h1 class="h-white">Contact</h1>
+		<div class="about" >
+		<div class="container about"  id="contact-section">
+				<h1>Contact</h1>
 				<p>Goran Piskachev<br>Fraunhofer IEM Institute for Mechatronic Systems Design<br>Department Software Engineering and IT-Security<br>Zukunftsmeile 1<br>33102 Paderborn</p>
 
-				<p><strong>e-Mail:</strong> <a href="mailto:goran.piskachev@iem.fraunhofer.de" class="email">goran.piskachev(at)iem.fraunhofer.de</a></p>
+				<p><strong>e-Mail:</strong> <a href="mailto:goran.piskachev@iem.fraunhofer.de">goran.piskachev(at)iem.fraunhofer.de</a></p>
 				<br/>
-				<p class="footer-links"><a href="impressum.html" class="footer">Impressum</a>  |  <a href="privacy.html" class="footer">Data Protection</a></p>
 			</div>
 		</div>
 		<!--- Contact end -->
