@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>SecuCheck</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Latest compiled and minified CSS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Navigacion start -->
+	<div id="custom-bootstrap-menu" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header"><a class="navbar-brand" href="#"><img style="margin-top: -8px;" src="img/secu-logo.png"/></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-menubuilder">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="index.html#about-section">About</a></li>
+					<li><a href="index.html#results-section">Results</a></li>
+					<li><a href="index.html#team-section">Team</a></li>
+					<li><a href="index.html#partners-section">Partners</a></li>
+					<li><a href="index.html#contact-section">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation end -->
+
+		<!--- About start -->
+		<div class="about" >
+			<div class="container about" id="about-section">
+				<div class="about-description">
+					<h1>Why SecuCheck?</h1>
+					<p>Static code analysis is a technology to detect various security vulnerabilities at implementation time. However, as studies show, developers reject <strong>static analysis tools</strong>, as they find them hard to configure such that they can operate efficiently in their application context. With their default parameters, most tools produce a high number of false warnings, while missing vulnerabilities that may be important. This demotivates the developers. The goal of this project is to reduce the gap between static analysis and software development, thereby improving the user experience of static analysis tools.</p>
+		
+					<a href="about.html" class="btn btn-action"><strong>Learn More</strong></a>
+				</div>
+			
+				<div class="about-image">
+					<a  href="#header-image">
+						<img src="img/process.jpg" class="image responsive thumbnail">
+					</a>
+					<div>
+						<a href="#_" class="lightbox image" id="header-image">
+							<img src="img/process.jpg" >
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- About end -->
+	
+		<!--- Results start -->
+		<div class="container result" id="results-section">
+			<h1>Results</h1>
+			<div class="row">
+				<div class="column">
+					<ul>
+						<li>Interviews with Software Developers
+            <ul>
+            <li>We interviewed 9 software developers from 5 companies to find out what developers think about existing tools for security checks, what are the existing problems, and what is their security awareness level. </li>
+            <li><a href="https://github.com/secucheck/secucheck.github.io/blob/master/docs/SecuCheck_Interviews_Results.pdf">Summary</a></li> 
+            </ul>
+            </li>
+						<li>Static Analysis Results Interchange Format (SARIF)
+            <ul>
+            <li>We integrated <a href="https://www.oasis-open.org/committees/sarif"> SARIF</a> into <a href="https://www.eclipse.org/cognicrypt/"> CogniCrypt</a> tool. We summarized the standard and documented our convertor to ease the integration of the standard in other static analysis tools. </li>
+            <li> Technical report: <a href="https://arxiv.org/abs/1907.02558">Integration of the Static Analysis Results Interchange Format in CogniCrypt</a></li>
+            </ul>
+            </li>
+            <li> SWAN: Security Methods for Weakness Detection
+            <ul>
+            <li>To detect specific security vulnerabilities, taint analyses must be configured with specific methods. For example, executeQuery() can be a sink for CWE-89 (SQL injection), but not for CWE-601 (open redirect). SWAN uses supervised machine-learning to automatically detect such methods from Java codebase and classifies them into different CWEs. SWAN_assist is an IntelliJ plugin that allows the developer to manually train the classifier through active learning and improve the precision of the approach.</li>
+            <li>Publication: <a href="https://piskachev.com/wp-content/uploads/2019/06/swan-paper.pdf">Codebase-Adaptive Detection of Security-Relevant Methods</a>, Goran Piskachev, Lisa Nguyen Quang Do, Eric Bodden, <a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/17/Codebase-Adaptive-Detection-of-Security-Relevant-Methods">, International Symposium on Software Testing and Analysis 2019</a></li>
+						<li>Source code: SWAN and SWAN_assist <a href="https://github.com/secure-software-engineering/swan">[github link]</a></li>
+						<li>Demonstration:  SwanAssist: Semi-Automated Detection of Code-Specific, Security-Relevant Methods, Goran Piskachev, Lisa Nguyen Quang Do, Oshando Johnson, and Eric Bodden, <a href="https://2019.ase-conferences.org/track/ase-2019-Demonstrations">Automated Software Engineering 2019</a> <a href="https://www.youtube.com/watch?v=fSyD3V6EQOY"> [video]</a> <a href="https://www.youtube.com/watch?v=nAExeTP1r_c">[long version video]</a></li>
+						<li>Technical report: <a href="https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1%5Bpublikation%5D=9859">Codebase-Adaptive Detection of Security-Relevant Methods</a> </li>
+            </ul>
+            </li>
+						
+					</ul>
+				</div>
+				<div class="column">
+					<a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/secucheck_swc?ref_src=twsrc%5Etfw">Project Updates by secucheck_swc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>	
+		</div>
+		<!--- Results end -->
+		
+		<!--- Team start -->
+		<div class="team" id="team-section">
+			<div class="container"> 
+			<h1 class="h-white">Team</h1>
+				<div class="team-content container">
+					<div class="team-card">
+						<img src="img/goran.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Goran Piskachev</h4>
+						<p>Project Lead</p>
+					</div>
+					<div class="team-card">
+						<img src="img/eric.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Prof. Dr. Eric Bodden</h4>
+						<p>Research Advisor</p>
+					</div>
+					<div class="team-card">
+						<img src="img/ingo.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Ingo Budde</h4>
+						<p>Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/oshando.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Oshando Johnson</h4>
+						<p>Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/ashish.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Ashish Shukla</h4>
+						<p>Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/johannes.jpg" class="responsive team-image"/>
+						<h4 class="h-white">Dr. Johannes Späth</h4>
+						<p>Research Advisor</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- Team end -->
+		
+		<!--- Partners start -->
+		
+		<div class="container partners" id="partners-section">
+		
+			<h1>Partners</h1>
+			
+			<div class="partner-logos">
+				<a href="https://www.softwarecampus.de/"><img src="img/scampus.jpg" class="partners-image"/></a>
+				<a href="https://www.iem.fraunhofer.de/"><img src="img/iem.jpg" class="partners-image"/></a>
+				<a href="https://www.softwareag.com"><img src="img/sag.jpg" class="partners-image"/></a>
+			</div>
+			
+			<h3>Funded by</h3>
+			<div class="funder-logo">
+				<a href="https://www.bmbf.de/"><img src="img/bmbf.png" class="partners-image"/></a>
+			</div>
+			</div>
+		
+		<!--- Partners end -->	
+		
+		<!--- Contact start -->
+		<div class="contact"  id="contact-section">
+			<div class="container">
+				<h1 class="h-white">Contact</h1>
+				<p>Goran Piskachev<br>Fraunhofer IEM Institute for Mechatronic Systems Design<br>Department Software Engineering and IT-Security<br>Zukunftsmeile 1<br>33102 Paderborn</p>
+
+				<p><strong>e-Mail:</strong> <a href="mailto:goran.piskachev@iem.fraunhofer.de" class="email">goran.piskachev(at)iem.fraunhofer.de</a></p>
+				<br/>
+				<p class="footer-links"><a href="impressum.html" class="footer">Impressum</a>  |  <a href="privacy.html" class="footer">Data Protection</a></p>
+			</div>
+		</div>
+		<!--- Contact end -->
+	
+	<script type="text/javascript">
+  		$(document).ready(function() {
+	// get current URL path and assign 'active' class
+	var pathname = window.location.pathname;
+	$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+})
+	</script>
+</body>
+
+</html>
