@@ -1,0 +1,47 @@
+# Service shown on the Service page and in the CV PDF.
+# Each entry is one line of Markdown; links are kept on the web page and dropped in the PDF.
+
+- title: "Editorial"
+  items:
+    - "Associate Editor (Static Analysis, Programming Paradigms), [IEEE Software](https://www.computer.org/csdl/magazine/so) – since April 2024"
+- title: "Organizing"
+  items:
+    - "Secure Development Conference (SecDev '27) – Vice General Chair"
+    - "[ECOOP](https://2020.ecoop.org/home) 2020 – Poster Session Co-Chair"
+    - "[ECOOP](https://2019.ecoop.org/home) 2019 – Doctoral Symposium Co-Chair"
+- title: "Program Committees"
+  items:
+    - "CAIN – Intl. Conf. on AI Engineering: [2026](https://conf.researchr.org/home/cain-2026), [2027](https://conf.researchr.org/home/cain-2027)"
+    - "ICPC – Intl. Conf. on Program Comprehension: [2027](https://conf.researchr.org/track/icpc-2027/icpc-2027-research-track)"
+    - "MOBILESoft – Intl. Conf. on Mobile Software Engineering and Systems: [2025](https://conf.researchr.org/track/mobilesoft-2025/mobilesoft-2025-research-track), [2026](https://conf.researchr.org/track/mobilesoft-2026/mobilesoft-2026-research-track), [2027](https://conf.researchr.org/track/mobilesoft-2027/mobilesoft-2027-research-track)"
+    - "IDE Workshop (collocated at ICSE): [2025](https://ide-workshop.github.io/content/ide-2025.html), [2026](https://ide-workshop.github.io/content/ide-2026.html), [2027](https://ide-workshop.github.io)"
+    - "SecDev – IEEE Secure Development Conf.: [2023](https://secdev.ieee.org/2023/home), [2024](https://secdev.ieee.org/2024/home), [2025](https://secdev.ieee.org/2025/home), [2026](https://conf.researchr.org/home/secdev-2026)"
+    - "SAS – Static Analysis Symposium: [2025](https://2025.splashcon.org/home/sas-2025)"
+    - "ASE – Intl. Conf. on Automated Software Engineering (Industry Track): [2024](https://conf.researchr.org/track/ase-2024/ase-2024-industry-showcase)"
+    - "SANER – Intl. Conf. on Software Analysis, Evolution and Reengineering (Tool Track): [2024](https://conf.researchr.org/home/saner-2024)"
+    - "ECOOP – European Conf. on Object-Oriented Programming (Doctoral Symposium): [2020](https://2020.ecoop.org/track/ecoop-2020-doctoral-symposium)"
+    - "MSR – Mining Software Repositories Conf. (Shadow PC): [2021](https://2021.msrconf.org/track/msr-2021-shadow-pc)"
+- title: "Journal Reviewing"
+  items:
+    - "[TOSEM](https://dl.acm.org/journal/tosem) – ACM Trans. on Software Engineering and Methodology: 2022, 2024, 2025"
+    - "[JSS](https://www.sciencedirect.com/journal/journal-of-systems-and-software) – Journal of Systems and Software (Elsevier): 2025, 2026"
+    - "[CoSe](https://www.sciencedirect.com/journal/computers-and-security) – Computers and Security (Elsevier): 2025, 2026"
+    - "[INFSOF](https://www.sciencedirect.com/journal/information-and-software-technology) – Information and Software Technology (Elsevier): 2025"
+    - "[ASE Journal](https://link.springer.com/journal/10515) – Automated Software Engineering (Springer): 2024, 2025"
+    - "[SN Computer Science](https://link.springer.com/journal/42979) (Springer): 2024"
+    - "[Cluster Computing](https://link.springer.com/journal/10586) (Springer): 2024"
+    - "[EMSE](https://www.springer.com/journal/10664/) – Empirical Software Engineering (Springer): 2020, 2022"
+    - "[SPE](https://onlinelibrary.wiley.com/journal/1097024x) – Software: Practice and Experience (Wiley): 2020"
+- title: "Artifact Evaluation"
+  items:
+    - "ICSE – Intl. Conf. on Software Engineering: [2024](https://conf.researchr.org/track/icse-2024/icse-2024-artifact-evaluation), [2025](https://conf.researchr.org/track/icse-2025/icse-2025-artifact-evaluation), [2026](https://conf.researchr.org/track/icse-2026/icse-2026-artifact-evaluation)"
+    - "PLDI – Conf. on Programming Language Design and Implementation: [2020](https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts), [2021](https://pldi21.sigplan.org/track/pldi-2021-PLDI-Research-Artifacts), [2022](https://pldi22.sigplan.org/track/pldi-2022-PLDI-Research-Artifacts), [2023](https://pldi23.sigplan.org/), [2024](https://pldi24.sigplan.org/)"
+    - "CAV – Intl. Conf. on Computer Aided Verification: [2023](http://www.i-cav.org/2023/artifact-evaluation/)"
+    - "ESOP – European Symposium on Programming: [2022](https://etaps.org/2022/esop), [2023](https://etaps.org/2023/esop?id=541)"
+    - "USENIX Security: [2020](https://www.usenix.org/conference/usenixsecurity20/call-for-artifacts), [2022](https://www.usenix.org/conference/usenixsecurity22/call-for-artifacts)"
+    - "ISSTA – Intl. Symposium on Software Testing and Analysis: [2017](https://conf.researchr.org/home/issta-2017), [2018](https://conf.researchr.org/home/ecoop-issta-2018)"
+- title: "External Reviewing"
+  items:
+    - "[CAV](https://i-cav.org/2024/) 2024 – Intl. Conf. on Computer Aided Verification"
+    - "[ICSE](https://conf.researchr.org/home/icse-2022) 2022 – Intl. Conf. on Software Engineering"
+    - "[IEEE S&P](https://www.ieee-security.org/TC/SP2021/index.html) 2021 – IEEE Symposium on Security and Privacy"
