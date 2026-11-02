@@ -88,7 +88,7 @@
 #section("Publications")
 #for p in data.publications {
   block(breakable: false, below: 0.6em)[
-    #mark-name(p.authors)#if p.authors != "" [. ]#emph(p.title). #p.venue, #p.year.#if p.note != "" [ #p.note]
+    #mark-name(p.authors)#if p.authors != "" [. ]#emph(p.title)#if not (p.title.ends-with("?") or p.title.ends-with("!")) [.] #p.venue_year.#if p.note != "" [ #p.note]
   ]
 }
 

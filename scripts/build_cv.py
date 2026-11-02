@@ -38,6 +38,11 @@ def plain(s):
     return s.replace('**', '')
 
 
+def venue_year(venue, year):
+    """Append the year unless the venue text already contains it."""
+    return venue if year in venue else '%s, %s' % (venue, year)
+
+
 def publications():
     rows = []
     for path in glob.glob(os.path.join(ROOT, '_publications', '*.md')):
@@ -54,7 +59,7 @@ def publications():
             'authors': authors,
             'title': fm['title'],
             'venue': fm.get('venue', ''),
-            'year': str(date)[:4],
+            'venue_year': venue_year(fm.get('venue', ''), str(date)[:4]),
             'note': plain(note),
         })
     rows.sort(key=lambda r: r['date'], reverse=True)

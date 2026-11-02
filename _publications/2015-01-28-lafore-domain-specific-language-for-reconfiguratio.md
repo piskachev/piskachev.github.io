@@ -7,5 +7,5 @@ date: 2015-01-28
 venue: 'Paderborn, Germany, July 2015'
 link: 'https://1drv.ms/b/s!Au3l-mM98H4ahKI6GyHHbMIL6pTLgw'
 excerpt: 'Goran Piskachev.'
-citation: 'Goran Piskachev. "LAFORE: Domain Specific Language for Reconfiguration (Master thesis)." Paderborn, Germany, July 2015, 2015.'
+citation: 'Goran Piskachev. "LAFORE: Domain Specific Language for Reconfiguration (Master thesis)." Paderborn, Germany, July 2015.'
 ---
