@@ -1,0 +1,168 @@
+# Source of truth for the CV page and the CV PDF (files/cv.pdf).
+# Edit this file, push, and the PDF is rebuilt by the GitHub Actions workflow.
+# Publications come from _publications/, talks from _talks/ and service from service.yml.
+
+name: Goran Piskachev
+email: goran@piskachev.com
+website: https://piskachev.github.io
+orcid: 0000-0003-4424-5838
+scholar: https://scholar.google.com/citations?user=DCkFWbgAAAAJ&hl=en
+github: https://github.com/piskachev
+linkedin: https://www.linkedin.com/in/goran-piskachev-28959194/
+location: New York, USA
+
+languages: Macedonian (native), German (C1), English (C2), Spanish (A2)
+
+experience:
+  - title: Applied Scientist
+    org: Amazon Web Services
+    start: October 2022
+    end: Present
+    location: Berlin, Germany (2022-2025) and New York, USA (2026-Present)
+    bullets:
+      - Leading initiatives in data protection technologies, including sensitive data detection and data sanitization solutions, contributing to the enhancement of AWS's privacy engineering practices.
+      - Acted as a Privacy Bar Raiser, advising and guiding development teams to ensure privacy standards are integrated throughout the software development lifecycle.
+      - Expanded focus to responsible AI practices, including research and application of methodologies to ensure security, transparency, and accountability in AI systems.
+
+  - title: Associate Editor
+    org: IEEE Software Magazine
+    url: https://www.computer.org/csdl/magazine/so
+    start: April 2024
+    end: Present
+    location: Virtual
+    bullets:
+      - Responsible for managing the review process for submissions in the areas of static analysis and programming paradigms.
+      - Coordinate with reviewers, oversee the evaluation of manuscripts, and provide final publication recommendations to the Editor-in-Chief.
+
+  - title: Team Manager
+    org: Fraunhofer IEM
+    url: https://www.iem.fraunhofer.de/
+    start: January 2022
+    end: September 2022
+    location: Paderborn, Germany
+    bullets:
+      - Led a team of four in developing secure software tools and services, focusing on static program analysis and software security. Contributed to strategic planning for secure software engineering initiatives.
+      - Managed an industry collaboration project, ensuring systematic technical analysis, clear reporting, and delivery of innovative static analysis solutions.
+
+  - title: Applied Scientist Intern
+    org: Amazon Web Services
+    start: January 2021
+    end: April 2021
+    location: Virtual
+    bullets:
+      - Contributed to an existing taint analysis tool by improving its callgraph construction.
+
+  - title: Research Associate
+    org: Fraunhofer IEM
+    url: https://www.iem.fraunhofer.de/
+    start: September 2015
+    end: December 2021
+    location: Paderborn, Germany
+    bullets:
+      - Conducted applied research in static and dynamic program analysis, collaborating with industry partners (e.g., Amazon, AXA, Software AG) on security-by-design initiatives.
+      - Led the SecuCheck project, developing configurable taint analysis tools.
+      - Supervised student theses, delivered academic seminars, and authored technical proposals for funded projects.
+
+  - title: Student Research Assistant
+    org: Fraunhofer IPT
+    url: https://www.ipt.fraunhofer.de/
+    start: January 2015
+    end: July 2015
+    location: Paderborn, Germany
+
+  - title: Student Research Assistant
+    org: Heinz Nixdorf Institut, Software engineering group
+    url: https://www.hni.uni-paderborn.de/swt/
+    start: February 2013
+    end: December 2014
+    location: Paderborn, Germany
+
+  - title: Research Intern
+    org: Imperial College London, Theoretical systems biology group
+    url: http://www.theosysbio.bio.ic.ac.uk/
+    start: July 2012
+    end: August 2012
+    location: London, UK
+
+  - title: Lab Demonstrator
+    org: UKIM Skopje, Faculty of Computer Science and Engineering
+    url: https://www.finki.ukim.mk/en
+    start: February 2012
+    end: June 2012
+    location: Skopje, North Macedonia
+
+  - title: Software Development Intern
+    org: Koios Savetovanje
+    url: http://www.koios-consulting.co.uk/
+    start: August 2011
+    end: October 2011
+    location: Zagreb, Croatia
+
+  - title: Software Development Intern
+    org: Alvila
+    url: http://www.alvila.com/
+    start: July 2011
+    end: August 2011
+    location: Prague, Czech Republic
+
+education:
+  - title: PhD in Computer Science
+    org: Paderborn University
+    url: http://www.uni-paderborn.de/
+    start: February 2016
+    end: December 2022
+    location: Paderborn, Germany
+    bullets:
+      - "Thesis: Adapting Taint Analyses for Detecting Security Vulnerabilities (summa cum laude), supervisor: Prof. Dr. Eric Bodden"
+
+  - title: MSc in Computer Science
+    org: Paderborn University
+    url: http://www.uni-paderborn.de/
+    start: October 2012
+    end: June 2015
+    location: Paderborn, Germany
+
+  - title: Electrical Engineering Degree
+    org: Ss. Cyril and Methodius University
+    url: https://www.finki.ukim.mk
+    start: October 2008
+    end: June 2012
+    location: Skopje, North Macedonia
+
+  - title: International Baccalaureate Diploma Programme
+    org: Josip Broz Tito High School
+    url: http://ibo.org/
+    start: September 2006
+    end: August 2008
+    location: Skopje, North Macedonia
+
+awards:
+  - "Best Engineering Paper Award, SCAM 2022: To what extent can we analyze Kotlin programs using existing Java taint analysis tools?"
+  - "Software Campus Grant (100.000 EUR) for the project SecuCheck by the German Ministry of Education and Research, 2018"
+  - "Erasmus Mundus Scholarship for Master Studies (European Union), 2012-2015"
+  - "IT-Scholarship for Engineering Studies by the Macedonian Ministry of Education, 2009-2012"
+
+supervision:
+  - "2023: Master thesis, Explorative research on using LLVM and PhASAR to run data-flow analyses on Swift"
+  - "2022: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/sse/lehre/seminar-secure-systems-engineering-ws-2021/) (WS21/22), Understanding and evaluating MarianaTrench"
+  - "2022: Master thesis, Explorative research on taint analysis for Kotlin"
+  - "2021: Master thesis, Soot-based configuration generator for analysis writers (co-supervised)"
+  - "2021: Master thesis, Extending fluentTQL: Specifying taint-flows through a domain-specific language"
+  - "2020: Master thesis, Evaluation of Call Graph Construction for Python (co-supervised)"
+  - "2020: Master thesis, Transformation of Taint and Typestate Specifications (co-supervised)"
+  - "2020: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/sse/lehre/vorlesungsarchiv/ws-201920/seminar-secure-systems-engineering/) (WS19/20), Transforming Taint flow Specifications into Correct Usage of APIs (co-supervised)"
+  - "2020: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/sse/lehre/vorlesungsarchiv/ws-201920/seminar-secure-systems-engineering/) (WS19/20), Survey on Domain Specific Languages for Taint Analysis"
+  - "2019: [Pro-Seminar Softwareentwicklung fuer software-intensive Systeme](https://www.hni.uni-paderborn.de/swt/lehre/proseminar-softwareentwicklung-fuer-software-intensive-systeme-ss2019/) (SS19), Representing Source Code in Machine Learning for Code Analysis"
+  - "2019: [Seminar Advanced Software Engineering Concepts](https://cs.uni-paderborn.de/dbis/lehre/veranstaltungen/ss-2019/seminar-advanced-software-engineering-concepts/general/) (SS19), Integrating Feedback in the IDE"
+  - "2019: Master thesis, Detection of methods of interest for security based on software documentation"
+  - "2019: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/swt/lehre/seminar-secure-systems-engineering-ws-20182019/) (WS18/19), Survey on adaptive static analysis"
+  - "2018: Bachelor thesis, Authentication and authorization checker for Java web systems"
+  - "2018: Bachelor thesis, Evaluation of machine learning algorithms for automatic detection of security-relevant methods"
+  - "2018: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/swt/lehre/seminar-secure-systems-engineering-ws-20172018/) (WS17/18), Inferring specifications for taint-style vulnerabilities"
+  - "2017: [Seminar Secure Systems Engineering](https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201617/seminar-secure-systems-engineering-ws-201617/) (WS16/17), Security vulnerabilities in Android's inter-app communication"
+
+teaching_assistance:
+  - "[Seminar: Replicability of software engineering artifacts](https://www.hni.uni-paderborn.de/sse/lehre/seminar-replicability-of-software-engineering-artifacts-ss-2021/) (SS21)"
+  - "[Model-based software development](https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ss2017/modellbasierte-softwareentwicklung-ss2017/) (SS17)"
+  - "[Model-driven software development](https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201617/model-driven-software-development-ws20162017/) (WS16/17)"
+  - "[Model-driven software development](https://www.hni.uni-paderborn.de/swt/lehre/vorlesungsarchiv/ws-201516/model-driven-software-development-ws20152016/) (WS15/16)"
