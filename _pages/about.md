@@ -12,7 +12,7 @@ redirect_from:
 
 **Research interests:** Program Analysis - Automated Reasoning - Software Security - Data Protection
 
-I am an Applied Scientist at Amazon Web Services (AWS) in New York. My research uses automated reasoning to make software secure and privacy-preserving at industrial scale. I work at the intersection of program analysis, formal methods, and machine learning, and I build techniques that hold up on industry scale codebases.
+I am an Applied Scientist at Amazon Web Services (AWS) in New York. My research uses automated reasoning to make software secure and privacy-preserving at industrial scale. I work at the intersection of program analysis, formal methods, and machine learning.
 
 At AWS, I have worked on [compositional taint analysis](https://www.amazon.science/publications/compositional-taint-analysis-for-enforcing-security-policies-at-scale) that finds security and privacy vulnerabilities in source code, which shipped to customers in Amazon CodeGuru. I have also developed techniques for detecting and protecting sensitive data across code, logs, and unstructured documents. Currently, I am developing deterministic reasoning techniques that complement generative AI, so that security assurance can keep pace with AI-accelerated software development.
 
