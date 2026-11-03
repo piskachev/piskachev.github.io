@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/2022-01-26-to-what-extent-can-we-analyze-kotlin-programs-usin
 date: 2022-01-26
 venue: '22nd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM), Limassol, Cyprus, October 2022'
-link: 'https://1drv.ms/b/s!Au3l-mM98H4ahL8hpiy7Drr8KvMTUw'
+link: 'https://doi.org/10.1109/SCAM55253.2022.00032'
 excerpt: 'Ranjith Krishnamurthy, Goran Piskachev, and Eric Bodden. **Best engineering paper award.**'
 citation: 'Ranjith Krishnamurthy, Goran Piskachev, and Eric Bodden. "To what extent can we analyze Kotlin programs using existing Java taint analysis tools?" 22nd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM), Limassol, Cyprus, October 2022.'
 ---

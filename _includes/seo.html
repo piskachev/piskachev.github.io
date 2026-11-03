@@ -6,7 +6,9 @@
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
 
-{% if page.title %}
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title %}
+{% elsif page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
 {% if seo_title %}
@@ -111,7 +113,13 @@ Twitter username (site.twitter.username), matching upstream behavior.
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      {% if site.social.job_title %}"jobTitle" : {{ site.social.job_title | jsonify }},
+      {% endif %}{% if site.social.works_for %}"worksFor" : {
+        "@type" : "Organization",
+        "name" : {{ site.social.works_for | jsonify }}{% if site.social.works_for_url %},
+        "url" : {{ site.social.works_for_url | jsonify }}{% endif %}
+      },
+      {% endif %}"sameAs" : {{ site.social.links | jsonify }}
     }
   </script>
 {% endif %}
